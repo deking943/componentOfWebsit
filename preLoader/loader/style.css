@@ -1,0 +1,25 @@
+body{
+background-color: #000;
+}
+
+.pre-loader{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border-bottom: 10px solid #fff;
+  animation: 0.8s animate infinite linear;
+
+}
+
+@keyframes animate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%)rotate(360deg);
+  }
+}
